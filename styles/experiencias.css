@@ -18,11 +18,20 @@ header{
 }
 body{
     overflow-x: hidden;
-   
+    background-color: rgba(243, 234, 228, 0.897);
+   }
+
+.fotos{
+  background-color: #77af9e;
 }
 
+.reviews{
+ background-color: #77af9e;
+ font-family: 'DoodlesOfFun', sans-serif;
+ font-size: 30px;
+ color: black;
 
-
+}
 .menu {
     width: 100vw;
     height: 14vh;
@@ -51,9 +60,7 @@ body{
 main{
  
     padding: 20px;
-    border: solid blue;
-
-    
+       
            
 }
 
