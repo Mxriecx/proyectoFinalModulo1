@@ -1,0 +1,122 @@
+@import url('https://fonts.cdnfonts.com/css/doodlesoffun');
+@import url('https://fonts.cdnfonts.com/css/questa');
+@import url('https://fonts.cdnfonts.com/css/qtie-script');
+@import url('https://fonts.cdnfonts.com/css/cakerolli-trial');
+
+                
+                
+*{
+    margin: 0;
+}
+
+header{
+
+    width: 100vw;
+    height: 14vh;
+
+      
+}
+body{
+    overflow-x: hidden;
+    background-color: rgba(255, 247, 247, 0.897);
+}
+
+main{
+    margin: 0 3%;
+}
+
+
+.menu {
+    width: 100vw;
+    height: 14vh;
+    background-color: #af8c77;
+    border-radius: 50px;
+    font-size: 20px;
+    font-family: 'DoodlesOfFun', sans-serif;
+    height: 13vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.menu-letras{
+    font-size: 25px;
+    display: flex;
+    
+       
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    
+}
+
+.parent {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: 1fr;
+grid-column-gap: 20px;
+grid-row-gap: 14px;
+}
+
+.div1 { grid-area: 1 / 1 / 2 / 2; }
+.div2 { grid-area: 1 / 2 / 2 / 3; }
+.div3 { grid-area: 1 / 3 / 2 / 4; }
+
+.contenedorimg2 {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;    
+}
+.contenedorimg2 {
+    animation: float 3s ease-in-out infinite;
+}
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.informacionContacto{
+    display: flex;
+    gap: 50px;
+    margin-top: 35px;
+    font-family: 'DoodlesOfFun', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    flex-wrap: wrap;
+    color: black;
+    }
+
+    span{
+          font-family: 'Cakerolli Trial', sans-serif;
+    }
+    P{
+        display: flex;
+        text-align: center;
+        font-family: 'Cakerolli Trial', sans-serif;        
+    }
+    .lista-servicios{
+        font-family: 'Cakerolli Trial', sans-serif;
+    }
+
+     @media screen and (max-width:768px){
+        .menu{
+            height:auto;
+            border: solid blue;            
+        }
+       
+
+        header{
+            height: auto;
+        }
+
+    }
+
+
+  
