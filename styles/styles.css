@@ -27,16 +27,115 @@ main{
    
 }
 
+/* Animación general de entrada del main */
+main {
+  animation: fadeInMain 1s ease forwards;
+  opacity: 0;
+}
 
+@keyframes fadeInMain {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Carrusel: animación suave en las imágenes */
+.carousel-inner img {
+  animation: zoomSlow 15s ease-in-out infinite;
+}
+
+@keyframes zoomSlow {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+/* Animación del slogan */
+.slogan {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 10px;
+  font-style: italic;
+  opacity: 0;
+  animation: fadeInSlogan 2s ease forwards 0.5s;
+}
+
+@keyframes fadeInSlogan {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Texto de bienvenida */
+.p1 {
+  max-width: 700px;
+  margin: 20px auto;
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  opacity: 0;
+  animation: fadeInText 1.5s ease forwards 1s;
+}
+
+@keyframes fadeInText {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
+.parent {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.parent img {
+  width: 100%;
+  border-radius: 15px;
+  animation: float 6s ease-in-out infinite;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.parent img:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  text-align: center;
+}
+
+ul li {
+  opacity: 0;
+  animation: fadeInList 0.8s ease forwards;
+}
+
+ul li:nth-child(1) { animation-delay: 0.3s; }
+ul li:nth-child(2) { animation-delay: 0.6s; }
+ul li:nth-child(3) { animation-delay: 0.9s; }
+ul li:nth-child(4) { animation-delay: 1.2s; }
+ul li:nth-child(5) { animation-delay: 1.5s; }
+
+@keyframes fadeInList {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
 
 .menu {
     width: 100vw;
-    height: 14vh;
     background-color: #af8c77;
     border-radius: 50px;
     font-size: 20px;
     font-family: 'DoodlesOfFun', sans-serif;
-    height: 13vh;
     position: fixed;
     top: 0;
     left: 0;
@@ -139,7 +238,9 @@ ul{
             height:auto;
              
         }
-        
+              main {
+    padding-top: 60px;
+  }
 
         header{
             height: auto;

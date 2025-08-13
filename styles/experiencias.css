@@ -49,74 +49,55 @@ body{
 }
 
 main{
-    height: 71.3vh;
+ 
     padding: 20px;
-        
-}
-.integrantes{
-    font-family: 'DoodlesOfFun', sans-serif;
-    text-align: center;
+    border: solid blue;
+
+    
+           
 }
 
-.presentacion2{
+span{
     margin: 0% 3%;
 }
 
-.carusel-expe{
-    height: 37vh;
-    padding: 10px;
-    background-color: #f0fdff; 
-    margin: 0% 3%;
+ h3 {
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: fadeDown 0.8s ease-out forwards;
 }
 
-.contenedorimg3{
-    width: 120px;
-    height: 100%;
-    contain: fill;
-    float: left;
-    transition: transform 0.5s ease;
+ p {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUp 0.8s ease-out forwards;
+  animation-delay: 0.8s;
 }
 
-.contenedorimg3:hover {
-  transform: scale(1.5);
-}
-.contenedorimg4{
-    width: 120px;
-    height: 100%;
-    contain: fill;
-    float: right;
-    transition: transform 0.5s ease;
+@keyframes fadeDown {
+  to {
+    opacity: 5;
+    transform: translateY(0);
+  }
 }
 
-.contenedorimg4:hover {
-  transform: scale(1.5);
-}
-.presentacion{
-    font-size: 20px;
-    font-family: 'DoodlesOfFun', sans-serif;
-    color: blue;
-    text-align: center;
-
+@keyframes fadeUp {
+  to {
+    opacity: 5;
+    transform: translateY(0);
+  }
 }
 
-.informacionContacto{
-    display: flex;
-    gap: 50px;
-    margin-top: 35px;
-    font-family: 'DoodlesOfFun', sans-serif;
-    font-size: 30px;
-    text-align: center;
-    flex-wrap: wrap;
-    color: black;
-    }
 
-   
+
    @media screen and (max-width:2000px){
         .menu{
             height:auto;
                      
         }
-       
+             main {
+    padding-top: 90px;
+  }
 
         header{
             height: auto;
