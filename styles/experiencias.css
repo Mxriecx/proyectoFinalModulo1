@@ -51,9 +51,7 @@ body{
 main{
     height: 71.3vh;
     padding: 20px;
-    border: solid blue;
-    /* margin: 0% 3%;  */
-     
+        
 }
 .integrantes{
     font-family: 'DoodlesOfFun', sans-serif;
@@ -113,10 +111,10 @@ main{
     }
 
    
-   @media screen and (max-width:768px){
+   @media screen and (max-width:2000px){
         .menu{
             height:auto;
-            border: solid blue;            
+                     
         }
        
 

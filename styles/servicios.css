@@ -105,10 +105,10 @@ grid-row-gap: 14px;
         font-family: 'Cakerolli Trial', sans-serif;
     }
 
-     @media screen and (max-width:768px){
+     @media screen and (max-width:2000px){
         .menu{
             height:auto;
-            border: solid blue;            
+                 
         }
        
 
