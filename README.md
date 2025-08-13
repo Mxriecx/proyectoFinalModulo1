@@ -1,3 +1,6 @@
+
+
+
 🍽️ Catálogo de Recursos de Catering
 📌 Descripción del Proyecto
 Este proyecto es un catálogo digital de servicios y recursos de catering pensado para mostrar opciones de comida, decoración y atención para eventos sociales y corporativos.
@@ -20,3 +23,8 @@ HTML5 → Estructura de la página y contenido.
 CSS3 → Estilos, animaciones y diseño responsive.
 
 JavaScript → Interactividad y manejo dinámico del catálogo.
+
+[Diseno mockup]
+
+([text](https://www.figma.com/design/MZ4oeAjE8yezvvhe9RgY9K/Primer-dise%C3%B1o?node-id=24-3&p=f&t=BwGtya5y5oDFdxiM-0))
+
